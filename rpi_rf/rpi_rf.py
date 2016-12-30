@@ -1,12 +1,13 @@
 """
-Sending and receiving 433/315Mhz signals with low-cost GPIO RF Modules on a Raspberry Pi.
+Sending and receiving 433/315Mhz signals with low-cost GPIO RF Modules on an Orange Pi.
 """
 
 import logging
 import time
 from collections import namedtuple
 
-from RPi import GPIO
+from pyA20.gpio import gpio
+from pyA20.gpio import port
 
 MAX_CHANGES = 67
 
